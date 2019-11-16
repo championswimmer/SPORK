@@ -99,7 +99,7 @@ dependencies {
 
 ## TODO List
 
-- [] Annotation Processor / Codegen support
-- [] remove kotlin-reflect 
-- [] allow a way to mark default get values if pref not already present
-- [] allow turning on/off pruning of old pref keys 
+- [ ] Annotation Processor / Codegen support
+- [ ] remove kotlin-reflect 
+- [ ] allow a way to mark default get values if pref not already present
+- [ ] allow turning on/off pruning of old pref keys 
