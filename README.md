@@ -74,6 +74,12 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+## Other Benefits
+
+Over time in large long running projects, you might have added prefs earlier, that are not used anymore. Your users might be having huge pref files with ages old keys not used anymore. But every time you do `getSharedPreferences` the entire file is still read into memory. 
+
+While initialising, **SPORK** will automatically remove old keys that are not in `AppPrefs.kt` anymore. Thus your `app_prefs.xml` is always an up-to-date and pruned implementation of `AppPrefs.kt`.
+
 
 ## Installation 
 
