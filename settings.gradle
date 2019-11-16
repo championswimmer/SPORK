@@ -1,0 +1,3 @@
+rootProject.name='SPORK Sample'
+include ':app'
+include ':spork'

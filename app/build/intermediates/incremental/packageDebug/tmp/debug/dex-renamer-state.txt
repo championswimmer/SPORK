@@ -1,0 +1,4 @@
+#Sat Nov 16 11:42:06 IST 2019
+base.0=/Users/championswimmer/Development/Personal/Android/SPORK/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

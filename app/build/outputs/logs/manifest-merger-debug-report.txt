@@ -1,0 +1,142 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [:spork] /Users/championswimmer/Development/Personal/Android/SPORK/spork/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/517f21e03a368c4b8ea1d80b21328cc2/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/3d738dd905c68a67ac77e9c52c0381b3/jetified-core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b75cd792c162b3c87c7b25b686586118/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/a575f52dbf5f1f4b574da61b2714b190/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c40998badbe353cdbdda40877a4e6151/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/30170b5b146c44bbd3fe0bfdd70e8122/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b3e9634a2fdc0b8ecd6a1809e7198d18/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9931676a8c3a9f04b1f9ad1be9e67a60/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/fc3926c5535a4b3b432c31942547f701/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/e260656eca75c4101d237bafd3918262/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c85d729729bf38651ddf4c94816ff11f/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/afa7d1bc3b56733850ce6798e516ab23/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/72f0b5bc1c135afc4cfb8b7096483f29/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/f5f1a825b72f3b9ae835124aa2ecf35f/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9d20c71f5811f31890beb9e6054e761f/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/0fbb1585d4f4245a614959a772356fad/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b4c137703a0d18fa2de3bc9c645b45f2/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b16c6012fba15419c311422a94a1da2d/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/46916538e545d9b920278355efeec724/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/957f157f75218beb2633dceb4058d8e2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/d66e3d1e7e2c2df919f73a2b2ec27d83/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b75cd792c162b3c87c7b25b686586118/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b75cd792c162b3c87c7b25b686586118/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/f5f1a825b72f3b9ae835124aa2ecf35f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/f5f1a825b72f3b9ae835124aa2ecf35f/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:11:9-40
+activity#tech.arnav.sporksample.MainActivity
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:12:19-69
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+MERGED from [:spork] /Users/championswimmer/Development/Personal/Android/SPORK/spork/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:spork] /Users/championswimmer/Development/Personal/Android/SPORK/spork/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/517f21e03a368c4b8ea1d80b21328cc2/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/517f21e03a368c4b8ea1d80b21328cc2/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/3d738dd905c68a67ac77e9c52c0381b3/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/3d738dd905c68a67ac77e9c52c0381b3/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b75cd792c162b3c87c7b25b686586118/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b75cd792c162b3c87c7b25b686586118/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/a575f52dbf5f1f4b574da61b2714b190/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/a575f52dbf5f1f4b574da61b2714b190/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c40998badbe353cdbdda40877a4e6151/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c40998badbe353cdbdda40877a4e6151/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/30170b5b146c44bbd3fe0bfdd70e8122/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/30170b5b146c44bbd3fe0bfdd70e8122/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b3e9634a2fdc0b8ecd6a1809e7198d18/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b3e9634a2fdc0b8ecd6a1809e7198d18/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9931676a8c3a9f04b1f9ad1be9e67a60/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9931676a8c3a9f04b1f9ad1be9e67a60/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/fc3926c5535a4b3b432c31942547f701/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/fc3926c5535a4b3b432c31942547f701/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/e260656eca75c4101d237bafd3918262/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/e260656eca75c4101d237bafd3918262/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c85d729729bf38651ddf4c94816ff11f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/c85d729729bf38651ddf4c94816ff11f/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/afa7d1bc3b56733850ce6798e516ab23/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/afa7d1bc3b56733850ce6798e516ab23/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/921f5c84648b7e37ad1576454d1801eb/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/72f0b5bc1c135afc4cfb8b7096483f29/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/72f0b5bc1c135afc4cfb8b7096483f29/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/f5f1a825b72f3b9ae835124aa2ecf35f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/f5f1a825b72f3b9ae835124aa2ecf35f/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9d20c71f5811f31890beb9e6054e761f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/9d20c71f5811f31890beb9e6054e761f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/0fbb1585d4f4245a614959a772356fad/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/0fbb1585d4f4245a614959a772356fad/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b4c137703a0d18fa2de3bc9c645b45f2/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b4c137703a0d18fa2de3bc9c645b45f2/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b16c6012fba15419c311422a94a1da2d/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/b16c6012fba15419c311422a94a1da2d/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/46916538e545d9b920278355efeec724/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/46916538e545d9b920278355efeec724/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/957f157f75218beb2633dceb4058d8e2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/957f157f75218beb2633dceb4058d8e2/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/d66e3d1e7e2c2df919f73a2b2ec27d83/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/championswimmer/.gradle/caches/transforms-2/files-2.1/d66e3d1e7e2c2df919f73a2b2ec27d83/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		ADDED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/championswimmer/Development/Personal/Android/SPORK/app/src/main/AndroidManifest.xml
