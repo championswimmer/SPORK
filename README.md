@@ -1,3 +1,3 @@
 ![](docs/spork.png)
 
-<p align="center"> **S**hared **P**references **O**bject **R**elations in **K**otlin </p>
+<p align="center"> <b>S</b>hared <b>P</b>references <b>O</b>bject <b>R</b>elations in <b>K</b>otlin </p>
