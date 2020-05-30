@@ -11,5 +11,4 @@ interface AppPrefs {
 
     @Pref("foobar")
     var fooBar: String
-
 }
