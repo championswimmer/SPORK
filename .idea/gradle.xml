@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/spork" />
             <option value="$PROJECT_DIR$/spork-annotations" />
+            <option value="$PROJECT_DIR$/spork-compiler" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,4 +1,5 @@
-include ':spork-annotations'
 rootProject.name='SPORK Sample'
-include ':app'
+include ':spork-annotations'
+include ':spork-compiler'
 include ':spork'
+include ':app'
