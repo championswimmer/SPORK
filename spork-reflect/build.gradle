@@ -2,6 +2,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+group = 'tech.arnav.spork'
+version = "$spork_version"
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"

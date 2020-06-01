@@ -2,6 +2,8 @@ plugins {
     id 'java-library'
     id 'kotlin'
 }
+group = 'tech.arnav.spork'
+version = "$spork_version"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
