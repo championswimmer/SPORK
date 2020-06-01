@@ -14,3 +14,6 @@ dependencies {
     implementation 'com.squareup:kotlinpoet-metadata:1.6.0'
     implementation project(path: ':spork-annotations', configuration: 'default')
 }
+
+// Maven Publish (for JitPack)
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

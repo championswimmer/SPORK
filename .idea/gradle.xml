@@ -12,9 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/spork" />
             <option value="$PROJECT_DIR$/spork-annotations" />
             <option value="$PROJECT_DIR$/spork-compiler" />
+            <option value="$PROJECT_DIR$/spork-reflect" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
