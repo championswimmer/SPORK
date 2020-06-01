@@ -4,11 +4,11 @@ import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
 
 @PreferenceFile("app_prefs")
-interface AppPrefs {
+abstract class AppPrefs {
 
     @Pref("count")
-    var count: Int
+    abstract var count: Int
 
     @Pref("foobar")
-    var fooBar: String
+    abstract var fooBar: String
 }

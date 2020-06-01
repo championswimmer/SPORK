@@ -1,11 +1,20 @@
 package tech.arnav.spork.compiler
 
 import com.squareup.kotlinpoet.FileSpec
+import com.squareup.kotlinpoet.PropertySpec
 import com.squareup.kotlinpoet.TypeSpec
-import com.sun.tools.javac.code.Symbol
+import com.squareup.kotlinpoet.asTypeName
+import com.squareup.kotlinpoet.metadata.KotlinPoetMetadataPreview
+import com.squareup.kotlinpoet.metadata.hasAnnotations
+import com.squareup.kotlinpoet.metadata.isSynthesized
+import com.squareup.kotlinpoet.metadata.toImmutableKmClass
+import com.squareup.kotlinpoet.metadata.toKotlinClassMetadata
+import kotlinx.metadata.KmProperty
+import kotlinx.metadata.KmPropertyVisitor
+import kotlinx.metadata.jvm.KotlinClassMetadata
 import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
-import java.io.File
+import tech.arnav.spork.compiler.generators.PrefClassGenerator
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.ProcessingEnvironment
 import javax.annotation.processing.RoundEnvironment
@@ -13,9 +22,14 @@ import javax.annotation.processing.SupportedAnnotationTypes
 import javax.annotation.processing.SupportedSourceVersion
 import javax.lang.model.SourceVersion
 import javax.lang.model.element.Element
-import javax.lang.model.element.PackageElement
+import javax.lang.model.element.ElementVisitor
 import javax.lang.model.element.TypeElement
+import javax.lang.model.element.VariableElement
+import javax.lang.model.util.ElementFilter
+import javax.lang.model.util.ElementScanner8
 import javax.lang.model.util.Elements
+import javax.lang.model.util.SimpleElementVisitor6
+import javax.lang.model.util.SimpleElementVisitor8
 
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 @SupportedAnnotationTypes(
@@ -32,39 +46,25 @@ class PrefProcessor : AbstractProcessor() {
         this.elementUtils = p0.elementUtils
     }
 
+    @KotlinPoetMetadataPreview
     override fun process(
         annotations: MutableSet<out TypeElement>?,
         env: RoundEnvironment?
     ): Boolean {
-        println("==============")
         env?.getElementsAnnotatedWith(PreferenceFile::class.java)?.forEach { prefFile ->
-            prefFile.enclosedElements
-            println(getSrcFiles(arrayOf(prefFile)))
+
+            val prefClassSpec = PrefClassGenerator(prefFile)
+
             FileSpec.builder(
                 elementUtils.getPackageOf(prefFile).qualifiedName.toString(),
                 "${prefFile.simpleName}Impl"
             )
-                .addType(
-                    TypeSpec.classBuilder("${prefFile.simpleName}Impl")
-                        .addOriginatingElement(prefFile)
-                        .build()
-                )
+                .addType(prefClassSpec.generateSpec())
                 .build()
                 .writeTo(processingEnv.filer)
         }
-        println("==============")
 
         return true
     }
 
-    private fun getSrcFiles(elements: Array<out Element?>): Set<File> {
-        return elements.filterNotNull().mapNotNull { elem ->
-            var origin = elem
-            while (origin.enclosingElement != null && origin.enclosingElement !is PackageElement) {
-                origin = origin.enclosingElement
-            }
-            val uri = (origin as? Symbol.ClassSymbol)?.sourcefile?.toUri()?.takeIf { it.isAbsolute }
-            uri?.let { File(it).canonicalFile }
-        }.toSet()
-    }
 }

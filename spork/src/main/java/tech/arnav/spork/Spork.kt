@@ -37,9 +37,9 @@ object Spork {
                         *(prefInterface.declaredMemberProperties.asSequence().map { prop ->
 
                             prop.findAnnotation<Pref>()?.let {
-                                validPrefSet.add(it.prefKey) //TODO: use propname if prefKey empty
+                                validPrefSet.add(it.key) //TODO: use propname if prefKey empty
 
-                                return@map Pair(prop.name, Pair(it.prefKey, prop.returnType))
+                                return@map Pair(prop.name, Pair(it.key, prop.returnType))
                             }
 
                         }.filterNotNull().toList().toTypedArray())
