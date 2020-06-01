@@ -4,12 +4,10 @@ import com.squareup.kotlinpoet.ClassName
 import com.squareup.kotlinpoet.FunSpec
 import com.squareup.kotlinpoet.ParameterSpec
 import com.squareup.kotlinpoet.PropertySpec
-import com.squareup.kotlinpoet.TypeName
 import com.squareup.kotlinpoet.TypeSpec
-import com.squareup.kotlinpoet.asTypeName
 import com.squareup.kotlinpoet.metadata.KotlinPoetMetadataPreview
-import com.squareup.kotlinpoet.metadata.isClass
 import com.squareup.kotlinpoet.metadata.toImmutableKmClass
+import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
 import tech.arnav.spork.compiler.extensions.toTypeName
 import javax.lang.model.element.Element
@@ -33,14 +31,33 @@ class PrefClassGenerator(val prefClassElement: Element) {
         ClassName("android.content", "SharedPreferences")
     ).initializer("context.getSharedPreferences(\"${prefFileName}\", Context.MODE_PRIVATE)").build()
 
+    private fun addPrefFields() {
+        val prefFields = prefClassElement.enclosedElements.filter {
+            it.getAnnotation(Pref::class.java) != null
+        }.associateBy {
+            it.simpleName.substring(0, it.simpleName.indexOf("\$annotations"))
+        }
+
+        kmMetadata.properties.forEach { prop ->
+            prefFields[prop.name]?.let { el ->
+                typeSpecBuilder.addProperty(
+                    PrefPropertyGenerator(
+                        prop,
+                        el.getAnnotation(Pref::class.java)
+                    ).generateSpec()
+                )
+            }
+        }
+    }
+
 
     fun generateSpec(): TypeSpec {
-        println("==========")
-        return typeSpecBuilder
-            .superclass(kmMetadata.name.toTypeName())
+        typeSpecBuilder.superclass(kmMetadata.name.toTypeName())
             .primaryConstructor(constructorSpec)
             .addProperty(prefFileVarSpec)
             .addOriginatingElement(prefClassElement)
-            .build()
+
+        addPrefFields()
+        return typeSpecBuilder.build()
     }
 }
