@@ -1,5 +1,12 @@
 ext {
-    spork_version = '0.2.2'
+  versions = [
+      // our versions
+      spork: '0.2.2',
 
-    kotlin_version = '1.3.72'
+      // sdk versions
+      kotlin: '1.3.72',
+
+      // library versions
+      kotlinpoet: '1.6.0'
+  ]
 }

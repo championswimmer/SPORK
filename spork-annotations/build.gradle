@@ -3,7 +3,7 @@ plugins {
     id 'kotlin'
 }
 group = 'tech.arnav.spork'
-version = "$spork_version"
+version = "$versions.spork"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -16,7 +16,7 @@ kotlin {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
 }
 
 // Maven Publish (for JitPack)

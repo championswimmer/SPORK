@@ -3,7 +3,7 @@ plugins {
     id 'kotlin'
 }
 group = 'tech.arnav.spork'
-version = "$spork_version"
+version = "$versions.spork"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -11,9 +11,9 @@ java {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'com.squareup:kotlinpoet:1.6.0'
-    implementation 'com.squareup:kotlinpoet-metadata:1.6.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin"
+    implementation "com.squareup:kotlinpoet:$versions.kotlinpoet"
+    implementation "com.squareup:kotlinpoet-metadata:$versions.kotlinpoet"
     implementation project(path: ':spork-annotations', configuration: 'default')
 }
 
