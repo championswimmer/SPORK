@@ -1,9 +1,9 @@
 package tech.arnav.sporksample
 
-import tech.arnav.spork.Spork
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import tech.arnav.spork.Spork
 
 class MainActivity : AppCompatActivity() {
 

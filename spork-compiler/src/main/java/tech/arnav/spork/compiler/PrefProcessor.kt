@@ -15,6 +15,8 @@ import kotlinx.metadata.jvm.KotlinClassMetadata
 import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
 import tech.arnav.spork.compiler.generators.PrefClassGenerator
+import tech.arnav.spork.compiler.generators.PrefFileGenerator
+import tech.arnav.spork.compiler.generators.SporkFileGenerator
 import javax.annotation.processing.AbstractProcessor
 import javax.annotation.processing.ProcessingEnvironment
 import javax.annotation.processing.RoundEnvironment
@@ -51,18 +53,20 @@ class PrefProcessor : AbstractProcessor() {
         annotations: MutableSet<out TypeElement>?,
         env: RoundEnvironment?
     ): Boolean {
-        env?.getElementsAnnotatedWith(PreferenceFile::class.java)?.forEach { prefFile ->
-
-            val prefClassSpec = PrefClassGenerator(prefFile)
-
-            FileSpec.builder(
-                elementUtils.getPackageOf(prefFile).qualifiedName.toString(),
-                "${prefFile.simpleName}Impl"
-            )
-                .addType(prefClassSpec.generateSpec())
-                .build()
-                .writeTo(processingEnv.filer)
+        if (annotations?.map { it.toString() }?.contains("tech.arnav.spork.annotations.PreferenceFile") != true) {
+            return false
         }
+
+        val sporkFileGenerator = SporkFileGenerator()
+
+        env?.getElementsAnnotatedWith(PreferenceFile::class.java)?.forEach { prefFile ->
+            PrefFileGenerator(elementUtils, prefFile).let {
+                sporkFileGenerator.addPrefFile(it)
+                it.write(processingEnv.filer)
+            }
+        }
+
+        sporkFileGenerator.write(processingEnv.filer)
 
         return true
     }

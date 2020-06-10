@@ -69,7 +69,7 @@ class PrefPropertyGenerator(kmProperty: ImmutableKmProperty, annotation: Pref) {
     private val getterSpec = FunSpec.getterBuilder()
         .addStatement(
             """
-            return ${VAR_PREFS}.${getterFunc}("${annotation.key}", ${getDefaultValue})
+            return ${VAR_PREFS}.${getterFunc}("${annotation.key}", ${getDefaultValue}) ?: ${getDefaultValue}
         """.trimIndent()
         )
 
