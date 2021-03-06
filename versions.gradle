@@ -1,7 +1,7 @@
 ext {
   versions = [
       // our versions
-      spork: '0.2.2',
+      spork: '0.3.0',
 
       // sdk versions
       kotlin: '1.4.30',
