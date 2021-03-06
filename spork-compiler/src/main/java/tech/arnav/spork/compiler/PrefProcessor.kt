@@ -33,7 +33,7 @@ import javax.lang.model.util.Elements
 import javax.lang.model.util.SimpleElementVisitor6
 import javax.lang.model.util.SimpleElementVisitor8
 
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
+@SupportedSourceVersion(SourceVersion.RELEASE_11)
 @SupportedAnnotationTypes(
     value = [
         "tech.arnav.spork.annotations.Pref",

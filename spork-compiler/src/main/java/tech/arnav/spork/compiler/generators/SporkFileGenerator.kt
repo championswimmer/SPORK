@@ -1,5 +1,6 @@
 package tech.arnav.spork.compiler.generators
 
+import com.squareup.kotlinpoet.AnnotationSpec
 import com.squareup.kotlinpoet.ClassName
 import com.squareup.kotlinpoet.FileSpec
 import com.squareup.kotlinpoet.FunSpec
@@ -26,6 +27,10 @@ class SporkFileGenerator {
 
     private val createFromClassFuncBuilder = FunSpec.builder("create").jvmStatic()
         .addTypeVariable(TypeVariableName("P", Any::class.asClassName()))
+        .addAnnotation(
+            AnnotationSpec.builder(Suppress::class.asClassName()).addMember("\"UNCHECKED_CAST\"")
+                .build()
+        )
         .addParameter(
             ParameterSpec.builder(
                 "context",
@@ -62,7 +67,9 @@ class SporkFileGenerator {
     @KotlinPoetMetadataPreview
     fun addPrefFile(prefFileGenerator: PrefFileGenerator) {
         createFromClassFuncBuilder.addStatement(
-            "%T::class.java -> %T(context) as P", prefFileGenerator.getAbstractClassName(), prefFileGenerator.getImplClassName()
+            "%T::class.java -> %T(context) as P",
+            prefFileGenerator.getAbstractClassName(),
+            prefFileGenerator.getImplClassName()
         )
         sporkObjBuilder.addOriginatingElement(prefFileGenerator.prefFile)
     }

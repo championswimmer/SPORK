@@ -4,7 +4,7 @@ ext {
       spork: '0.2.2',
 
       // sdk versions
-      kotlin: '1.3.72',
+      kotlin: '1.4.30',
 
       // library versions
       kotlinpoet: '1.6.0'

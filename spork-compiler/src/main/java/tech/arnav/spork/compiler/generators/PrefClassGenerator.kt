@@ -10,6 +10,8 @@ import com.squareup.kotlinpoet.metadata.toImmutableKmClass
 import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
 import tech.arnav.spork.compiler.extensions.toTypeName
+import java.lang.IllegalArgumentException
+import java.util.*
 import javax.lang.model.element.Element
 
 @KotlinPoetMetadataPreview
@@ -37,9 +39,9 @@ class PrefClassGenerator(val prefClassElement: Element) {
         }.associateBy {
             it.simpleName.substring(0, it.simpleName.indexOf("\$annotations"))
         }
-
         kmMetadata.properties.forEach { prop ->
-            prefFields[prop.name]?.let { el ->
+            val propName = "get${prop.name.capitalize(Locale.ROOT)}"
+            prefFields[propName]?.let { el ->
                 typeSpecBuilder.addProperty(
                     PrefPropertyGenerator(
                         prop,
