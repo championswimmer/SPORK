@@ -7,15 +7,12 @@ version = "$versions.spork"
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.3"
 
-    defaultConfig {
+  defaultConfig {
         minSdkVersion 19
         targetSdkVersion 30
-        versionCode 10
-        versionName "0.1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
     }
 

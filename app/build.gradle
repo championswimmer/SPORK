@@ -5,8 +5,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "29.0.3"
-    defaultConfig {
+  defaultConfig {
         applicationId "tech.arnav.sporksample"
         minSdkVersion 19
         targetSdkVersion 30
