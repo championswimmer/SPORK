@@ -23,6 +23,7 @@ import tech.arnav.spork.compiler.SP_SET_INT
 import tech.arnav.spork.compiler.SP_SET_LONG
 import tech.arnav.spork.compiler.SP_SET_STRING
 import tech.arnav.spork.compiler.VAR_PREFS
+import tech.arnav.spork.compiler.error.UnsupportedDatatypeError
 import tech.arnav.spork.compiler.extensions.toTypeName
 
 @KotlinPoetMetadataPreview
@@ -43,7 +44,7 @@ class PrefPropertyGenerator(kmProperty: ImmutableKmProperty, annotation: Pref) {
             Long::class.qualifiedName -> SP_GET_LONG
             Boolean::class.qualifiedName -> SP_GET_BOOLEAN
             Float::class.qualifiedName -> SP_GET_FLOAT
-            else -> SP_GET_INT
+            else -> throw UnsupportedDatatypeError(typeName.toString())
         }
     private val setterFunc
         get() = when (typeName.toString()) {
@@ -52,7 +53,7 @@ class PrefPropertyGenerator(kmProperty: ImmutableKmProperty, annotation: Pref) {
             Long::class.qualifiedName -> SP_SET_LONG
             Boolean::class.qualifiedName -> SP_SET_BOOLEAN
             Float::class.qualifiedName -> SP_SET_FLOAT
-            else -> SP_SET_INT
+            else -> throw UnsupportedDatatypeError(typeName.toString())
         }
 
     private val getDefaultValue
@@ -62,7 +63,7 @@ class PrefPropertyGenerator(kmProperty: ImmutableKmProperty, annotation: Pref) {
             Long::class.qualifiedName -> DEFAULT_LONG
             Boolean::class.qualifiedName -> DEFAULT_BOOLEAN
             Float::class.qualifiedName -> DEFAULT_FLOAT
-            else -> DEFAULT_INT
+            else -> throw UnsupportedDatatypeError(typeName.toString())
         }
 
 
