@@ -10,7 +10,6 @@ import com.squareup.kotlinpoet.metadata.toImmutableKmClass
 import tech.arnav.spork.annotations.Pref
 import tech.arnav.spork.annotations.PreferenceFile
 import tech.arnav.spork.compiler.extensions.toTypeName
-import java.lang.IllegalArgumentException
 import java.util.*
 import javax.lang.model.element.Element
 
@@ -26,7 +25,9 @@ class PrefClassGenerator(val prefClassElement: Element) {
         .build()
 
     // TODO: default to empty to use the File's name
-    private val prefFileName = prefClassElement.getAnnotation(PreferenceFile::class.java).fileName
+    private val prefFileName =
+        prefClassElement.getAnnotation(PreferenceFile::class.java).fileName.takeIf { it.isNotEmpty() }
+            ?: prefClassElement.simpleName
 
     private val prefFileVarSpec = PropertySpec.builder(
         "prefs",

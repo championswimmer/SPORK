@@ -27,9 +27,9 @@ object Spork {
                 private val prefMap: Map<String, Pair<String, KType>>
 
                 init {
-
-                    val fileName = prefInterface.findAnnotation<PreferenceFile>()?.fileName
+                    val prefFileAnnotation = prefInterface.findAnnotation<PreferenceFile>()
                         ?: throw IllegalArgumentException("Interface ${prefInterface.qualifiedName} not annotated with PreferenceFile")
+                    val fileName = prefFileAnnotation.fileName.takeIf { it.isNotEmpty() } ?: prefInterface.simpleName
                     val validPrefSet = mutableSetOf<String>()
 
                     prefs = context.getSharedPreferences(fileName, MODE_PRIVATE)
